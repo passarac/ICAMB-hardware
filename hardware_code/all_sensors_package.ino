@@ -73,9 +73,6 @@ void setup(){
   Wire.begin();
   mpu6050.begin();
   mpu6050.calcGyroOffsets(true);
-  //init_anglex = round(mpu6050.getAngleX());
-  //init_angley = round(mpu6050.getAngleY());
-  //init_anglez = round(mpu6050.getAngleZ());
 
   //temperature and humidity sensor
   dht.begin();
