@@ -124,9 +124,6 @@ void loop() {
     anglex = round(mpu6050.getGyroX());
     angley = round(mpu6050.getGyroY());
     anglez = round(mpu6050.getGyroZ());
-    //if(init_anglex < 0){anglex = anglex + abs(init_anglex);} else {anglex = anglex - abs(init_anglex);}
-    //if(init_angley < 0){angley = angley + abs(init_angley);} else {angley = angley - abs(init_angley);}
-    //if(init_anglez < 0){anglez = anglez + abs(init_anglez);} else {anglez = anglez - abs(init_anglez);}
   
     //Temperature and Humidity sensor
     temperature = dht.readTemperature(); //celcius
