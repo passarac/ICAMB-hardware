@@ -628,5 +628,5 @@ void loop() {
   }
   Firebase.set(firebaseData, "sensor_info", arr1);
   arr1.set("/", "");
-  delay(10000);
+  while(true){}
 }
