@@ -50,7 +50,7 @@ HX711 scale;
 float calibration_factor = -7050; //-7050 worked for my 440lb max scale setup
 
 
-#define nr 400
+#define nr 660
 
 //arrays
 float accx_arr[nr];
@@ -487,5 +487,214 @@ void loop() {
   }
   Firebase.updateNode(firebaseData, "sensor_info", arr1);
   arr1.set("/", "");
+  //loop 21
+  for(int i=400; i<420; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 22
+  for(int i=420; i<440; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 23
+  for(int i=440; i<460; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 24
+  for(int i=460; i<480; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 25
+  for(int i=480; i<500; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 26
+  for(int i=500; i<520; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 27
+  for(int i=520; i<540; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 28
+  for(int i=540; i<560; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 29
+  for(int i=560; i<580; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 30
+  for(int i=580; i<600; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 31
+  for(int i=600; i<620; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 32
+  for(int i=620; i<640; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  //loop 33
+  for(int i=640; i<660; i++){
+    String path = "/"+String(i);
+    arr1.set(path+"/pat_id/", "patient001");
+    arr1.set(path+"/accel_x/", accx_arr[i]);
+    arr1.set(path+"/accel_y/", accy_arr[i]);
+    arr1.set(path+"/accel_z/", accz_arr[i]);
+    arr1.set(path+"/gyro_x/", anglex_arr[i]);
+    arr1.set(path+"/gyro_y/", angley_arr[i]);
+    arr1.set(path+"/gyro_z/", anglez_arr[i]);
+    arr1.set(path+"/load_cell/", weight_arr[i]);
+    arr1.set(path+"/date/", date_arr[i]);
+    arr1.set(path+"/time/", time_arr[i]);
+  }
+  Firebase.updateNode(firebaseData, "sensor_info", arr1);
+  arr1.set("/", "");
+  
   while(true){}
 }
