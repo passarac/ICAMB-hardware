@@ -50,7 +50,7 @@ HX711 scale;
 float calibration_factor = -7050; //-7050 worked for my 440lb max scale setup
 
 
-#define nr 600
+#define nr 350
 
 //arrays
 float accx_arr[nr];
@@ -72,11 +72,6 @@ FirebaseJson arr4;
 FirebaseJson arr5;
 FirebaseJson arr6;
 FirebaseJson arr7;
-FirebaseJson arr8;
-FirebaseJson arr9;
-FirebaseJson arr10;
-FirebaseJson arr11;
-FirebaseJson arr12;
 
 void setup(){
   Serial.begin(115200);
@@ -287,85 +282,5 @@ void loop() {
   }
   Firebase.set(firebaseData, "sensor_info", arr7);
   arr7.set("/", "");
-  //loop 8
-  for(int i=350; i<400; i++){
-    String path = "/"+String(i);
-    arr8.set(path+"/pat_id/", "patient001");
-    arr8.set(path+"/accel_x/", accx_arr[i]);
-    arr8.set(path+"/accel_y/", accy_arr[i]);
-    arr8.set(path+"/accel_z/", accz_arr[i]);
-    arr8.set(path+"/gyro_x/", anglex_arr[i]);
-    arr8.set(path+"/gyro_y/", angley_arr[i]);
-    arr8.set(path+"/gyro_z/", anglez_arr[i]);
-    arr8.set(path+"/load_cell/", weight_arr[i]);
-    arr8.set(path+"/date/", date_arr[i]);
-    arr8.set(path+"/time/", time_arr[i]);
-  }
-  Firebase.set(firebaseData, "sensor_info", arr8);
-  arr8.set("/", "");
-  //loop 9
-  for(int i=400; i<450; i++){
-    String path = "/"+String(i);
-    arr9.set(path+"/pat_id/", "patient001");
-    arr9.set(path+"/accel_x/", accx_arr[i]);
-    arr9.set(path+"/accel_y/", accy_arr[i]);
-    arr9.set(path+"/accel_z/", accz_arr[i]);
-    arr9.set(path+"/gyro_x/", anglex_arr[i]);
-    arr9.set(path+"/gyro_y/", angley_arr[i]);
-    arr9.set(path+"/gyro_z/", anglez_arr[i]);
-    arr9.set(path+"/load_cell/", weight_arr[i]);
-    arr9.set(path+"/date/", date_arr[i]);
-    arr9.set(path+"/time/", time_arr[i]);
-  }
-  Firebase.set(firebaseData, "sensor_info", arr9);
-  arr9.set("/", "");
-  //loop 10
-  for(int i=450; i<500; i++){
-    String path = "/"+String(i);
-    arr10.set(path+"/pat_id/", "patient001");
-    arr10.set(path+"/accel_x/", accx_arr[i]);
-    arr10.set(path+"/accel_y/", accy_arr[i]);
-    arr10.set(path+"/accel_z/", accz_arr[i]);
-    arr10.set(path+"/gyro_x/", anglex_arr[i]);
-    arr10.set(path+"/gyro_y/", angley_arr[i]);
-    arr10.set(path+"/gyro_z/", anglez_arr[i]);
-    arr10.set(path+"/load_cell/", weight_arr[i]);
-    arr10.set(path+"/date/", date_arr[i]);
-    arr10.set(path+"/time/", time_arr[i]);
-  }
-  Firebase.set(firebaseData, "sensor_info", arr10);
-  arr10.set("/", "");
-  //loop 11
-  for(int i=500; i<550; i++){
-    String path = "/"+String(i);
-    arr11.set(path+"/pat_id/", "patient001");
-    arr11.set(path+"/accel_x/", accx_arr[i]);
-    arr11.set(path+"/accel_y/", accy_arr[i]);
-    arr11.set(path+"/accel_z/", accz_arr[i]);
-    arr11.set(path+"/gyro_x/", anglex_arr[i]);
-    arr11.set(path+"/gyro_y/", angley_arr[i]);
-    arr11.set(path+"/gyro_z/", anglez_arr[i]);
-    arr11.set(path+"/load_cell/", weight_arr[i]);
-    arr11.set(path+"/date/", date_arr[i]);
-    arr11.set(path+"/time/", time_arr[i]);
-  }
-  Firebase.set(firebaseData, "sensor_info", arr11);
-  arr11.set("/", "");
-  //loop 12
-  for(int i=550; i<600; i++){
-    String path = "/"+String(i);
-    arr12.set(path+"/pat_id/", "patient001");
-    arr12.set(path+"/accel_x/", accx_arr[i]);
-    arr12.set(path+"/accel_y/", accy_arr[i]);
-    arr12.set(path+"/accel_z/", accz_arr[i]);
-    arr12.set(path+"/gyro_x/", anglex_arr[i]);
-    arr12.set(path+"/gyro_y/", angley_arr[i]);
-    arr12.set(path+"/gyro_z/", anglez_arr[i]);
-    arr12.set(path+"/load_cell/", weight_arr[i]);
-    arr12.set(path+"/date/", date_arr[i]);
-    arr12.set(path+"/time/", time_arr[i]);
-  }
-  Firebase.set(firebaseData, "sensor_info", arr12);
-  arr12.set("/", "");
   while(true){}
 }
